@@ -211,7 +211,7 @@ async function predict() {
     let pred_index = prediction.indexOf(Math.max(...prediction));
     let result = labels[pred_index] + " Pose";
 
-    predResult.innerHTML = "I think it's a " + result;
+    predResult.innerHTML = "It's " + result;
     console.log("Prediction:", result);
 
     show(predResult);
